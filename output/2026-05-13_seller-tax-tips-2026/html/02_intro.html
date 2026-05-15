@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1080, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <title>셀러 종합소득세 신고 — 인트로</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --bg: #0d0d0d;
+        --fg: #ffffff;
+        --body: rgba(255, 255, 255, 0.84);
+        --brush: url("../../../design-system/assets/underline/underline_brush_wave.svg");
+      }
+
+      html,
+      body {
+        width: 1080px;
+        height: 1350px;
+        margin: 0;
+        overflow: hidden;
+        background: var(--bg);
+        font-family:
+          "Pretendard Variable",
+          Pretendard,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Apple SD Gothic Neo",
+          "Noto Sans KR",
+          sans-serif;
+        font-feature-settings: "ss01", "ss02", "tnum";
+        -webkit-font-smoothing: antialiased;
+        text-rendering: geometricPrecision;
+      }
+
+      .card {
+        position: relative;
+        width: 1080px;
+        height: 1350px;
+        overflow: hidden;
+        background: var(--bg);
+        color: var(--fg);
+        letter-spacing: 0;
+      }
+
+      .intro-textbox {
+        position: absolute;
+        left: 100px;
+        right: 100px;
+        top: 154px;
+        bottom: 154px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .intro-title {
+        width: 880px;
+        margin: 0;
+        font-size: 72px;
+        font-weight: 800;
+        line-height: 1.3;
+        letter-spacing: 0;
+        word-break: keep-all;
+        white-space: pre-line;
+      }
+
+      .intro-body {
+        width: 860px;
+        margin: 78px 0 0;
+        color: var(--body);
+        font-size: 45px;
+        font-weight: 500;
+        line-height: 1.6;
+        letter-spacing: 0;
+        word-break: keep-all;
+        white-space: pre-line;
+      }
+
+      .brush-highlight {
+        display: inline;
+        color: var(--fg);
+        background-image: var(--brush);
+        background-repeat: no-repeat;
+        background-position: 0 102%;
+        background-size: 100% 0.38em;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        padding: 0 4px 0.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="card intro">
+      <section class="intro-textbox">
+        <h2 class="intro-title">종합소득세(종소세)란?
+<span class="brush-highlight">작년 소득</span>을 정산하는 세금</h2>
+        <p class="intro-body">5월에는 지난해 1월 1일부터 12월 31일까지의
+소득을 합산해 신고하고 세금을 정산합니다.
+사업자·프리랜서·N잡 셀러도 이 시기를 놓치면
+가산세가 붙습니다.</p>
+      </section>
+    </article>
+  </body>
+</html>

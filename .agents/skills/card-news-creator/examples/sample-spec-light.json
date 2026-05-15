@@ -1,0 +1,42 @@
+{
+  "topic": "초보 셀러가 마진표에 고정할 항목",
+  "slug": "margin-table-checklist-light",
+  "theme": "light",
+  "cardCount": 3,
+  "caption": "초보 셀러가 마진을 볼 때는 계산식보다 항목을 먼저 고정해야 합니다.",
+  "hashtags": ["#초보셀러", "#마진계산", "#브랜드"],
+  "cards": [
+    {
+      "type": "hook",
+      "title": "마진표 만들 때\n먼저 고정할\n3가지",
+      "highlight": "3가지"
+    },
+    {
+      "type": "info",
+      "format": "list",
+      "headline": "상품마다\n같은 기준으로\n비교하세요",
+      "highlight": "같은 기준",
+      "items": [
+        "플랫폼 수수료",
+        "배송비와 포장비",
+        "광고비와 할인비"
+      ],
+      "evidence": "샘플 기준: 리스트형 정보 카드 렌더 확인용입니다."
+    },
+    {
+      "type": "cta",
+      "title": "셀러에게 유익한 정보를\n계속 받고 싶다면!",
+      "highlight": "유익한 정보",
+      "body": "@your_brand을 팔로우해보세요.\n매주 커머스 관련 소식을 전달해드려요:)",
+      "logo": true
+    }
+  ],
+  "sources": [
+    {
+      "type": "internal-note",
+      "title": "초보 셀러 행동 패턴",
+      "path": "knowledge/raw/notes/초보 셀러 행동 패턴.md",
+      "createdAt": "2026-04-14"
+    }
+  ]
+}

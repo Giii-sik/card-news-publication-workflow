@@ -1,0 +1,23 @@
+.theme-light {
+  --bg: #ffffff;
+  --fg: #191f28;
+  --accent: #0b78f8;
+  --divider: rgba(25, 31, 40, 0.12);
+  --pill-bg: #ffffff;
+  --pill-fg: #191f28;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.theme-light .card {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.theme-light .evidence__kind {
+  color: #ffffff;
+  background: var(--accent);
+  padding: 2px 10px;
+  align-self: flex-start;
+  border-radius: 2px;
+}

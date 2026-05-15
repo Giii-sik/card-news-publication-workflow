@@ -1,0 +1,21 @@
+{
+  "name": "card-news-publication-workflow",
+  "version": "1.0.0",
+  "description": "Instagram card news publication template - renders JSON spec to 1080x1350 PNG cards.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node .agents/skills/card-news-creator/scripts/build-html.mjs",
+    "render": "node .agents/skills/card-news-creator/scripts/render.mjs",
+    "generate": "node .agents/skills/card-news-creator/scripts/run.mjs",
+    "sample": "node .agents/skills/card-news-creator/scripts/run.mjs .agents/skills/card-news-creator/examples/sample-spec.json",
+    "render:html": "node _internal/scripts/render-html.mjs",
+    "validate:spec": "node _internal/scripts/validate-spec.mjs",
+    "check:assets": "node _internal/scripts/check-assets.mjs",
+    "inspect:output": "node _internal/scripts/inspect-output.mjs",
+    "test": "node _internal/tests/render-timeout.test.mjs"
+  },
+  "dependencies": {
+    "puppeteer": "^23.11.1"
+  }
+}

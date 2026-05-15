@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1080, initial-scale=1" />
+    <title>Info Image System - Fee Policy Reality Composite</title>
+    <style>
+      @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --bg: #0d0d0d;
+        --fg: #ffffff;
+        --body: rgba(255, 255, 255, 0.86);
+        --type-h3-size: 62px;
+        --type-h3-line-height: 1.35;
+        --type-h3-weight: 700;
+        --type-body-size: 45px;
+        --type-body-line-height: 1.6;
+        --type-body-weight: 500;
+        --info-textbox-padding-y: 90px;
+        --info-textbox-padding-x: 100px;
+      }
+
+      html,
+      body {
+        width: 1080px;
+        height: 1350px;
+        margin: 0;
+        overflow: hidden;
+        background: var(--bg);
+        font-family:
+          "Pretendard Variable",
+          Pretendard,
+          -apple-system,
+          BlinkMacSystemFont,
+          system-ui,
+          sans-serif;
+      }
+
+      .card {
+        position: relative;
+        width: 1080px;
+        height: 1350px;
+        overflow: hidden;
+        background: var(--bg);
+        color: var(--fg);
+        letter-spacing: 0;
+      }
+
+      .image-area {
+        position: absolute;
+        inset: 0 0 auto;
+        width: 1080px;
+        height: 819px;
+        overflow: hidden;
+        background: #0d0d0d;
+      }
+
+      .source {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 31%;
+      }
+
+      .image-area::after {
+        content: "";
+        position: absolute;
+        inset: auto 0 0;
+        height: 180px;
+        background: linear-gradient(180deg, rgba(13, 13, 13, 0), rgba(13, 13, 13, 0.2));
+        pointer-events: none;
+      }
+
+      .text-area {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 819px;
+        bottom: 0;
+        padding: var(--info-textbox-padding-y) var(--info-textbox-padding-x);
+      }
+
+      h3,
+      p {
+        width: 880px;
+        margin: 0;
+        word-break: keep-all;
+        white-space: pre-line;
+        letter-spacing: 0;
+      }
+
+      h3 {
+        overflow: hidden;
+        color: var(--fg);
+        font-size: var(--type-h3-size);
+        font-weight: var(--type-h3-weight);
+        line-height: var(--type-h3-line-height);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      p {
+        margin-top: 34px;
+        color: var(--body);
+        font-size: var(--type-body-size);
+        font-weight: var(--type-body-weight);
+        line-height: var(--type-body-line-height);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <section class="image-area">
+        <img class="source" src="../assets/01-info-reality-composite-clean.png" alt="" />
+      </section>
+      <section class="text-area">
+        <h3>경비 처리는 증빙부터</h3>
+        <p>카드값보다 먼저 챙길 건 증빙입니다. 영수증·계산서·거래내역이 있어야 경비가 됩니다.</p>
+      </section>
+    </main>
+  </body>
+</html>

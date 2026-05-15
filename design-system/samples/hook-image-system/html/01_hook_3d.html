@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1080, initial-scale=1" />
+    <title>Hook Image System - 3D Hook</title>
+    <style>
+      @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+      :root {
+        --brand: #0b78f8;
+        --white: #ffffff;
+        --muted: rgba(255, 255, 255, 0.68);
+        --dim: rgba(255, 255, 255, 0.44);
+        --black: #070707;
+        --underline-brush-wave: url("../../../assets/underline/underline_brush_wave.svg");
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1080px;
+        height: 1350px;
+        margin: 0;
+        overflow: hidden;
+        background: #111;
+        font-family: "Pretendard Variable", Pretendard, -apple-system,
+          BlinkMacSystemFont, system-ui, sans-serif;
+      }
+
+      .card {
+        position: relative;
+        width: 1080px;
+        height: 1350px;
+        overflow: hidden;
+        color: var(--white);
+        background: #111;
+      }
+
+      .source {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 46%;
+      }
+
+      .bottom-gradient {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 560px;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.44) 24%,
+            rgba(0, 0, 0, 0.78) 58%,
+            rgba(0, 0, 0, 0.92) 100%
+          );
+        pointer-events: none;
+      }
+
+      .copy {
+        position: absolute;
+        left: 100px;
+        right: 100px;
+        bottom: 112px;
+        z-index: 2;
+      }
+
+      .brand-logo {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        z-index: 3;
+        width: 178px;
+        height: auto;
+        opacity: 0.92;
+        filter: drop-shadow(0 8px 22px rgba(0, 0, 0, 0.28));
+      }
+
+      h1 {
+        width: 880px;
+        margin: 0;
+        color: var(--white);
+        font-size: 92px;
+        line-height: 1.2;
+        font-weight: 800;
+        letter-spacing: 0;
+        text-shadow: 0 8px 34px rgba(0, 0, 0, 0.42);
+      }
+
+      .highlight {
+        color: var(--white);
+        padding: 0 0.03em 0.08em;
+        background-image: var(--underline-brush-wave);
+        background-position: left 0 bottom 0.01em;
+        background-size: 100% 0.38em;
+        background-repeat: no-repeat;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        text-shadow:
+          0 8px 34px rgba(0, 0, 0, 0.42);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <img class="source" src="../assets/01-hook-bg-3d-clean.png" alt="" />
+      <div class="bottom-gradient"></div>
+      <img class="brand-logo" src="../../../assets/logo/logo_symbol+logo_white.svg" alt="Brand" />
+
+      <section class="copy">
+        <h1>
+          스마트스토어<br />
+          <span class="highlight">수수료 정책</span> 바뀌고<br />
+          꼭 알아야 하는 것
+        </h1>
+      </section>
+    </main>
+  </body>
+</html>

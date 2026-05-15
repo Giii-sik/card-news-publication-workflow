@@ -1,0 +1,19 @@
+.theme-dark {
+  --bg: #0d0d0d;
+  --fg: #ffffff;
+  --accent: #0b78f8;
+  --divider: rgba(255, 255, 255, 0.14);
+  --pill-bg: #ffffff;
+  --pill-fg: #0d0d0d;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.theme-dark .card {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.theme-dark .evidence__kind {
+  color: var(--accent);
+}

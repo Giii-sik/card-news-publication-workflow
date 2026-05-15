@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 96" preserveAspectRatio="none">
+  <filter id="rough" x="-4%" y="-45%" width="108%" height="190%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.045 0.55" numOctaves="2" seed="8" />
+    <feDisplacementMap in="SourceGraphic" scale="6" />
+  </filter>
+  <path
+    fill="#0B78F8"
+    filter="url(#rough)"
+    d="M5 55 C21 25 35 17 52 35 C67 51 77 32 94 21 C115 8 130 21 142 40 C155 60 171 35 189 24 C211 10 229 14 241 36 C254 58 271 39 288 23 C306 7 327 12 339 34 C352 58 368 40 386 24 C407 6 426 14 438 34 C451 55 468 42 486 25 C509 5 529 12 542 33 C555 55 571 43 590 28 C610 13 628 18 636 35 L636 64 C616 51 600 54 584 67 C561 86 540 74 529 55 C518 36 503 46 485 63 C463 84 443 75 432 55 C421 36 405 45 388 62 C366 84 346 75 335 55 C324 36 307 45 290 63 C267 85 247 76 236 56 C225 37 210 45 192 63 C169 84 149 75 138 56 C128 38 112 44 96 61 C74 84 53 75 43 56 C34 40 21 44 5 66 Z"
+  />
+</svg>

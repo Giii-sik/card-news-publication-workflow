@@ -1,0 +1,248 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0d0d0d;
+  --fg: #ffffff;
+  --body: rgba(255, 255, 255, 0.86);
+  --quiet: rgba(255, 255, 255, 0.46);
+  --line: rgba(255, 255, 255, 0.12);
+  --type-h3-size: 62px;
+  --type-h3-line-height: 1.35;
+  --type-h3-weight: 700;
+  --type-body2-size: 40px;
+  --type-body2-line-height: 1.6;
+  --type-body2-weight: 400;
+}
+
+html,
+body {
+  width: 1080px;
+  height: 1350px;
+  margin: 0;
+  overflow: hidden;
+  background: var(--bg);
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    sans-serif;
+  font-feature-settings: "ss01", "ss02", "tnum";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+.card {
+  position: relative;
+  width: 1080px;
+  height: 1350px;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--fg);
+  letter-spacing: 0;
+}
+
+.image-slot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 819px;
+  background-color: #141414;
+  background-image:
+    conic-gradient(
+      from 45deg,
+      rgba(255, 255, 255, 0.1) 25%,
+      transparent 0 50%,
+      rgba(255, 255, 255, 0.1) 0 75%,
+      transparent 0
+    );
+  background-size: 56px 56px;
+  border-bottom: 1px solid var(--line);
+}
+
+.image-slot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(13, 13, 13, 0) 55%, rgba(13, 13, 13, 0.18) 100%),
+    radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.08), transparent 52%);
+}
+
+.text-area {
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  top: 819px;
+  bottom: 100px;
+  padding-top: 64px;
+}
+
+.headline {
+  width: 880px;
+  margin: 0;
+  color: var(--fg);
+  font-size: var(--type-h3-size);
+  font-weight: var(--type-h3-weight);
+  line-height: var(--type-h3-line-height);
+  letter-spacing: 0;
+  word-break: keep-all;
+  white-space: pre-line;
+}
+
+.body {
+  width: 880px;
+  margin: 34px 0 0;
+  color: var(--body);
+  font-size: var(--type-body2-size);
+  font-weight: var(--type-body2-weight);
+  line-height: var(--type-body2-line-height);
+  letter-spacing: 0;
+  word-break: keep-all;
+  white-space: pre-line;
+}
+
+.card--info-text .text-area {
+  top: 0;
+  bottom: 0;
+  height: auto;
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card--info-text .headline {
+  width: 880px;
+  margin: 0 auto;
+  font-size: var(--type-h3-size);
+  font-weight: var(--type-h3-weight);
+  line-height: var(--type-h3-line-height);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-line;
+}
+
+.card--info-text .body {
+  width: 880px;
+  margin: 64px auto 0;
+  color: #ffffff;
+  font-size: var(--type-body2-size);
+  font-weight: var(--type-body2-weight);
+  line-height: var(--type-body2-line-height);
+  letter-spacing: 0;
+  word-break: keep-all;
+  white-space: pre-line;
+}
+
+.flat-emoji {
+  display: block;
+  width: 126px;
+  height: 126px;
+  margin: 0 auto 60px;
+}
+
+.flat-emoji svg {
+  display: block;
+  width: 126px;
+  height: 126px;
+  overflow: visible;
+  filter: drop-shadow(0 16px 24px rgba(0, 0, 0, 0.3));
+}
+
+.flat-emoji img {
+  display: block;
+  width: 126px;
+  height: 126px;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 24px rgba(0, 0, 0, 0.3));
+}
+
+.flat-emoji .blue {
+  fill: #0b78f8;
+}
+
+.flat-emoji .blue-deep {
+  fill: #0756c7;
+}
+
+.flat-emoji .blue-soft {
+  fill: #e8f2ff;
+}
+
+.flat-emoji .paper {
+  fill: #f7fbff;
+}
+
+.flat-emoji .white {
+  fill: #ffffff;
+}
+
+.flat-emoji .green {
+  fill: #23c55e;
+}
+
+.flat-emoji .green-soft {
+  fill: #dcfce7;
+}
+
+.flat-emoji .yellow {
+  fill: #ffd85a;
+}
+
+.flat-emoji .red {
+  fill: #ff6b6b;
+}
+
+.flat-emoji .gray {
+  fill: #d7e0ea;
+}
+
+.flat-emoji .ink {
+  fill: #191f28;
+}
+
+.flat-emoji .muted {
+  fill: #b8c7d9;
+}
+
+.flat-emoji .line-blue,
+.flat-emoji .line-muted,
+.flat-emoji .line-white {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.flat-emoji .line-blue {
+  stroke: #0b78f8;
+}
+
+.flat-emoji .line-muted {
+  stroke: #b8c7d9;
+}
+
+.flat-emoji .line-white {
+  stroke: #ffffff;
+}
+
+.draw-underline {
+  display: inline;
+  color: #ffffff;
+  padding: 0 0.03em 0.08em;
+  background-image: url("../../../design-system/assets/underline/underline_brush_wave.svg");
+  background-position: left 0 bottom 0.01em;
+  background-size: 100% 0.38em;
+  background-repeat: no-repeat;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}

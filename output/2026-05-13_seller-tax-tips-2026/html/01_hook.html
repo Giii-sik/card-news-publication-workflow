@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1080, initial-scale=1" />
+<title>셀러 종합소득세 신고 — hook</title>
+<style>
+  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html,
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    background: #0d0d0d;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    font-feature-settings: "ss01", "ss02", "tnum";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+  }
+
+  .card {
+    position: relative;
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    color: #fff;
+    background: #0d0d0d;
+    letter-spacing: 0;
+  }
+
+  .hook-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 42%;
+  }
+
+  .hook-gradient {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 610px;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(13, 13, 13, 0) 0%,
+        rgba(13, 13, 13, 0.22) 24%,
+        rgba(13, 13, 13, 0.76) 62%,
+        rgba(13, 13, 13, 0.98) 100%
+      );
+    pointer-events: none;
+  }
+
+  .wordmark {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+    width: 178px;
+    height: auto;
+    filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.32));
+  }
+
+  .headline {
+    position: absolute;
+    z-index: 3;
+    left: 100px;
+    right: 100px;
+    bottom: 112px;
+    width: 880px;
+    margin: 0;
+    color: #fff;
+    font-size: 92px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0;
+    word-break: keep-all;
+    white-space: pre-line;
+    text-shadow: 0 8px 34px rgba(0, 0, 0, 0.42);
+  }
+
+  .brush-wave-highlight {
+    position: relative;
+    display: inline;
+    color: #fff;
+    text-shadow: 0 8px 34px rgba(0, 0, 0, 0.42);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  .brush-wave-highlight::before {
+    content: "";
+    position: absolute;
+    left: -0.08em;
+    right: -0.08em;
+    bottom: -0.08em;
+    z-index: -1;
+    height: 0.46em;
+    background-image: url("../../../design-system/assets/underline/underline_brush_wave.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100% 100%;
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <img class="hook-bg" src="../assets/01-hook-calculator-tax-source.png" alt="" />
+    <div class="hook-gradient"></div>
+    <!-- 자기 브랜드 로고 자리 — design-system/assets/logo/ 에 자산을 두고 <img class="wordmark"> 로 추가 -->
+    <h1 class="headline">5월 <span class="brush-wave-highlight">종소세</span> 신고 전,
+이거부터 확인하세요!</h1>
+  </main>
+</body>
+</html>
